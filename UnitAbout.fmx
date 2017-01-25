@@ -1,0 +1,206 @@
+object FormAbout: TFormAbout
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'About'
+  ClientHeight = 350
+  ClientWidth = 350
+  Position = DesktopCenter
+  FormStyle = StayOnTop
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Client
+    Cursor = crHandPoint
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 330.000000000000000000
+    Size.Height = 330.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnClick = Panel1Click
+    object Label6: TLabel
+      AutoSize = True
+      StyledSettings = [Style]
+      Position.X = 26.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 238.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Trebuchet MS'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.FontColor = claForestgreen
+      TextSettings.WordWrap = False
+      Text = 'Designer : Abduraimov Mo'#39'minjon'
+    end
+    object Layout1: TLayout
+      Position.X = 135.000000000000000000
+      Position.Y = 239.000000000000000000
+      Size.Width = 74.000000000000000000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Ellipse3: TEllipse
+        Fill.Color = claForestgreen
+        HitTest = False
+        Position.X = 6.000000000000000000
+        Position.Y = 12.000000000000000000
+        Scale.X = 0.500000000000000000
+        Scale.Y = 0.500000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Ellipse4: TEllipse
+          Fill.Color = claLightblue
+          HitTest = False
+          Position.X = 64.000000000000000000
+          Position.Y = -24.000000000000000000
+          RotationAngle = -5.000000000000000000
+          Size.Width = 49.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          object Circle3: TCircle
+            Fill.Color = claWhite
+            Locked = True
+            HitTest = False
+            Position.X = -3.000000000000000000
+            Position.Y = -9.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 57.000000000000000000
+            Size.PlatformDefault = False
+            object Circle4: TCircle
+              Fill.Color = claBlack
+              Locked = True
+              HitTest = False
+              Position.X = 11.000000000000000000
+              Position.Y = 23.000000000000000000
+              Size.Width = 17.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+        end
+        object Pie2: TPie
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = claLightblue
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFFF3CD90
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Locked = True
+          HitTest = False
+          Position.X = 15.000000000000000000
+          Position.Y = -40.000000000000000000
+          RotationAngle = 170.000000000000000000
+          Size.Width = 90.000000000000000000
+          Size.Height = 106.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          EndAngle = -90.000000000000000000
+          object FloatAnimation2: TFloatAnimation
+            AnimationType = InOut
+            AutoReverse = True
+            Enabled = True
+            Duration = 0.500000000000000000
+            Interpolation = Sinusoidal
+            Loop = True
+            PropertyName = 'EndAngle'
+            StartValue = -100.000000000000000000
+            StartFromCurrent = True
+            StopValue = 100.000000000000000000
+          end
+        end
+      end
+    end
+    object Label7: TLabel
+      Align = Bottom
+      AutoSize = True
+      StyledSettings = [Style]
+      Position.Y = 311.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Trebuchet MS'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.FontColor = claNavy
+      TextSettings.HorzAlign = Center
+      TextSettings.WordWrap = False
+      Text = '(c) 2016-2017 Delphi.Uz'
+    end
+    object Label8: TLabel
+      Align = Top
+      AutoSize = True
+      StyledSettings = [Style]
+      Size.Width = 330.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Trebuchet MS'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.FontColor = claNavy
+      TextSettings.HorzAlign = Center
+      TextSettings.WordWrap = False
+      Text = 'Created by : @MrDelphiGuru'
+    end
+    object Label9: TLabel
+      AutoSize = True
+      StyledSettings = [Style]
+      Position.X = 27.000000000000000000
+      Position.Y = 45.000000000000000000
+      Size.Width = 225.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Trebuchet MS'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.FontColor = claForestgreen
+      TextSettings.WordWrap = False
+      Text = 'Author : Abduraimov Mo'#39'minjon'
+    end
+    object Label10: TLabel
+      AutoSize = True
+      StyledSettings = [Style]
+      Position.X = 27.000000000000000000
+      Position.Y = 114.000000000000000000
+      Size.Width = 271.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Trebuchet MS'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.FontColor = claForestgreen
+      TextSettings.WordWrap = False
+      Text = 'Programming : Abduraimov Mo'#39'minjon'
+    end
+    object FloatAnimation3: TFloatAnimation
+      Duration = 0.200000002980232200
+      StartValue = 0.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+    object ShadowEffect1: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+    end
+  end
+  object ShadowEffect2: TShadowEffect
+    Distance = 3.000000000000000000
+    Direction = 45.000000000000000000
+    Softness = 0.300000011920929000
+    Opacity = 0.600000023841857900
+    ShadowColor = claBlack
+  end
+end

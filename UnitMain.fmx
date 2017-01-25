@@ -1,0 +1,435 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Image Effects www.Delphi.uz'
+  ClientHeight = 476
+  ClientWidth = 681
+  Fill.Kind = Gradient
+  Fill.Gradient.Points = <
+    item
+      Color = xFFD4F7FB
+      Offset = 0.000000000000000000
+    end
+    item
+      Color = xFFABFBCF
+      Offset = 1.000000000000000000
+    end>
+  Fill.Gradient.StartPosition.X = 0.500000000000000000
+  Fill.Gradient.StartPosition.Y = 1.000000000000000000
+  Fill.Gradient.StopPosition.X = 0.499999970197677600
+  Fill.Gradient.StopPosition.Y = 0.000000000000000000
+  Position = DesktopCenter
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object PanelBottom: TPanel
+    Align = Bottom
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 415.000000000000000000
+    Size.Width = 671.000000000000000000
+    Size.Height = 56.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object BtnOpen: TButton
+      Align = Left
+      Cursor = crHandPoint
+      StyledSettings = [Style, FontColor]
+      ModalResult = 1
+      Margins.Left = 15.000000000000000000
+      Margins.Top = 15.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Margins.Bottom = 15.000000000000000000
+      Position.X = 15.000000000000000000
+      Position.Y = 15.000000000000000000
+      Size.Width = 106.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Open Picture'
+      TextSettings.Font.Family = 'Trebuchet MS'
+      TextSettings.Font.Size = 14.000000000000000000
+      OnClick = BtnOpenClick
+      object ShadowEffect3: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+    end
+    object SBRipple: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Left
+      TabOrder = 2
+      Cursor = crIBeam
+      Value = 15.000000000000000000
+      Increment = 2.000000000000000000
+      Position.X = 151.000000000000000000
+      Position.Y = 20.000000000000000000
+      TextSettings.Font.Family = 'Trebuchet MS'
+      TextSettings.Font.Size = 14.000000000000000000
+      Margins.Left = 15.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Margins.Bottom = 15.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 21.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Style, FontColor]
+      OnChange = SBRippleChange
+      object ShadowEffect5: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+    end
+    object SBBlur: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Left
+      TabOrder = 1
+      Cursor = crIBeam
+      Max = 9.000000000000000000
+      Value = 1.000000000000000000
+      ValueType = Float
+      Increment = 0.200000002980232200
+      Position.X = 263.000000000000000000
+      Position.Y = 20.000000000000000000
+      TextSettings.Font.Family = 'Trebuchet MS'
+      TextSettings.Font.Size = 14.000000000000000000
+      Margins.Left = 15.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Margins.Bottom = 15.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 21.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Style, FontColor]
+      OnChange = SBBlurChange
+      object ShadowEffect4: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+    end
+    object BtnAbout: TButton
+      Align = Right
+      Cursor = crHandPoint
+      StyledSettings = [Style, FontColor]
+      Margins.Left = 15.000000000000000000
+      Margins.Top = 15.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Margins.Bottom = 15.000000000000000000
+      Position.X = 576.000000000000000000
+      Position.Y = 15.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'About'
+      TextSettings.Font.Family = 'Trebuchet MS'
+      TextSettings.Font.Size = 14.000000000000000000
+      OnClick = BtnAboutClick
+      object ShadowEffect2: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+    end
+    object ShadowEffect1: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+    end
+    object CheckBox1: TCheckBox
+      Align = Left
+      Cursor = crHandPoint
+      StyledSettings = [Style, FontColor]
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 365.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 76.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Stretch'
+      TextSettings.Font.Family = 'Trebuchet MS'
+      TextSettings.Font.Size = 14.000000000000000000
+      OnChange = CheckBox1Change
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 568
+    Top = 232
+  end
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Align = Client
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    PopupMenu = PopupMenu1
+    Size.Width = 661.000000000000000000
+    Size.Height = 341.000000000000000000
+    Size.PlatformDefault = False
+    object RippleEffect1: TRippleEffect
+      Amplitude = 0.100000001490116100
+      Frequency = 15.000000000000000000
+      Phase = 0.000000000000000000
+      AspectRatio = 1.500000000000000000
+    end
+    object InvertEffect1: TInvertEffect
+      Enabled = False
+    end
+    object MonochromeEffect1: TMonochromeEffect
+      Enabled = False
+    end
+    object BlurEffect1: TBlurEffect
+      Softness = 1.000000000000000000
+      Enabled = False
+    end
+    object GloomEffect1: TGloomEffect
+      Enabled = False
+      GloomIntensity = 1.000000000000000000
+      BaseIntensity = 1.000000000000000000
+      GloomSaturation = 1.000000000000000000
+      BaseSaturation = 1.000000000000000000
+    end
+    object EmbossEffect1: TEmbossEffect
+      Enabled = False
+      Amount = 1.000000000000000000
+      Width = 3.000000000000000000
+    end
+    object PencilStrokeEffect1: TPencilStrokeEffect
+      Enabled = False
+      brushSize = 1.000000000000000000
+    end
+    object SepiaEffect1: TSepiaEffect
+      Enabled = False
+      Amount = 0.500000000000000000
+    end
+  end
+  object PanelTop: TPanel
+    Align = Top
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 5.000000000000000000
+    Size.Width = 671.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object GroupBox1: TGroupBox
+      Align = Client
+      StyledSettings = [Other]
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 661.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Effects'
+      TextSettings.Font.Family = 'Trebuchet MS'
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claForestgreen
+      TabOrder = 0
+      object RBRipple: TRadioButton
+        Align = Left
+        Cursor = crHandPoint
+        StyledSettings = [Style]
+        IsChecked = True
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 68.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'Ripple'
+        TextSettings.Font.Family = 'Trebuchet MS'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claNavy
+        OnChange = RBRippleChange
+      end
+      object RBBlur: TRadioButton
+        Align = Left
+        Cursor = crHandPoint
+        StyledSettings = [Style]
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 83.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 54.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Blur'
+        TextSettings.Font.Family = 'Trebuchet MS'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claNavy
+        OnChange = RBBlurChange
+      end
+      object RBInvert: TRadioButton
+        Align = Left
+        Cursor = crHandPoint
+        StyledSettings = [Style]
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 147.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 68.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = 'Invert'
+        TextSettings.Font.Family = 'Trebuchet MS'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claNavy
+        OnChange = RBInvertChange
+      end
+      object RBMonochrome: TRadioButton
+        Align = Left
+        Cursor = crHandPoint
+        StyledSettings = [Style]
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 225.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 112.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Monochrome'
+        TextSettings.Font.Family = 'Trebuchet MS'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claNavy
+        OnChange = RBMonochromeChange
+      end
+      object RBGloom: TRadioButton
+        Align = Left
+        Cursor = crHandPoint
+        StyledSettings = [Style]
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 347.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Gloom'
+        TextSettings.Font.Family = 'Trebuchet MS'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claNavy
+        OnChange = RBGloomChange
+      end
+      object RBEmboss: TRadioButton
+        Align = Left
+        Cursor = crHandPoint
+        StyledSettings = [Style]
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 427.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Emboss'
+        TextSettings.Font.Family = 'Trebuchet MS'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claNavy
+        OnChange = RBEmbossChange
+      end
+      object RBPencil: TRadioButton
+        Align = Left
+        Cursor = crHandPoint
+        StyledSettings = [Style]
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 587.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Pencil'
+        TextSettings.Font.Family = 'Trebuchet MS'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claNavy
+        OnChange = RBPencilChange
+      end
+      object RBSepial: TRadioButton
+        Align = Left
+        Cursor = crHandPoint
+        StyledSettings = [Style]
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 507.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Sepial'
+        TextSettings.Font.Family = 'Trebuchet MS'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claNavy
+        OnChange = RBSepialChange
+      end
+    end
+    object ShadowEffect7: TShadowEffect
+      Distance = 2.000000000000000000
+      Direction = 50.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 456
+    Top = 232
+    object MenuItemSavePicture: TMenuItem
+      ShortCut = 16467
+      Text = 'Save Picture'
+      OnClick = MenuItemSavePictureClick
+    end
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = 'Bitmap|*.bmp'
+    Left = 328
+    Top = 224
+  end
+end

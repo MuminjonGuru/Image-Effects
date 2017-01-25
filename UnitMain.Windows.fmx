@@ -1,0 +1,8 @@
+inherited FormMain_Windows: TFormMain_Windows
+  DesignerMasterStyle = 0
+  inherited PanelBottom: TPanel
+    inherited SBBlur: TSpinBox
+      Visible = False
+    end
+  end
+end
