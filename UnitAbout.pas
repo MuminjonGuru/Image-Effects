@@ -53,7 +53,7 @@ implementation
 
 procedure TFormAbout.Panel1Click(Sender: TObject);
 begin
-  ShellExecute(0, 'open', 'https://delphi.uz', Nil, Nil, SW_SHOWMAXIMIZED);
+  ShellExecute(0, 'OPEN', 'https://delphi.uz', Nil, Nil, SW_SHOWMAXIMIZED);
 end;
 
 end.
