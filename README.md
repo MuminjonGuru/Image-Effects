@@ -1,3 +1,5 @@
+## Show some :heart: and star the repo to support the project
+
 ## Delphi FMX Image Effects program for Windows OS
 
 This program powered by FireMonkey framework. And uses FMX components.
