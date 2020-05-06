@@ -1,9 +1,10 @@
-//
-//  Copyright Abduraimov Mo'minjon 2017
-//    Image Effects program for Windows OS
-//
-//    @MrDlephiGuru
-//                  https://delphi.uz
+{***********************************************}
+{  Copyright Abduraimov Mo'minjon 2017          }
+{    Image Effects program for Windows OS       }
+{                                               }
+{    @MuminjonGuru                              }
+{                  https://delphi.uz            }
+{***********************************************}
 
 unit UnitMain;
 
@@ -127,7 +128,9 @@ begin
   End;
 end;
 
-// Controlling Effect Components
+{*******************************}
+{ Controlling Effect Components }
+{*******************************}
 
 procedure TFormMain.RBBlurChange(Sender: TObject);
 begin

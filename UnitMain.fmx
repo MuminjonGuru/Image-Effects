@@ -429,7 +429,7 @@ object FormMain: TFormMain
   end
   object SaveDialog1: TSaveDialog
     Filter = 'Bitmap|*.bmp'
-    Left = 328
-    Top = 224
+    Left = 320
+    Top = 240
   end
 end

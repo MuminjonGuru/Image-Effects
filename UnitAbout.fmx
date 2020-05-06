@@ -6,7 +6,7 @@ object FormAbout: TFormAbout
   Caption = 'About'
   ClientHeight = 350
   ClientWidth = 350
-  Position = DesktopCenter
+  Position = ScreenCenter
   FormStyle = StayOnTop
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -24,20 +24,6 @@ object FormAbout: TFormAbout
     Size.PlatformDefault = False
     TabOrder = 0
     OnClick = Panel1Click
-    object Label6: TLabel
-      AutoSize = True
-      StyledSettings = [Style]
-      Position.X = 26.000000000000000000
-      Position.Y = 80.000000000000000000
-      Size.Width = 238.000000000000000000
-      Size.Height = 19.000000000000000000
-      Size.PlatformDefault = False
-      TextSettings.Font.Family = 'Trebuchet MS'
-      TextSettings.Font.Size = 16.000000000000000000
-      TextSettings.FontColor = claForestgreen
-      TextSettings.WordWrap = False
-      Text = 'Designer : Abduraimov Mo'#39'minjon'
-    end
     object Layout1: TLayout
       Position.X = 135.000000000000000000
       Position.Y = 239.000000000000000000
@@ -153,21 +139,7 @@ object FormAbout: TFormAbout
       TextSettings.FontColor = claNavy
       TextSettings.HorzAlign = Center
       TextSettings.WordWrap = False
-      Text = 'Created by : @MrDelphiGuru'
-    end
-    object Label9: TLabel
-      AutoSize = True
-      StyledSettings = [Style]
-      Position.X = 27.000000000000000000
-      Position.Y = 45.000000000000000000
-      Size.Width = 225.000000000000000000
-      Size.Height = 19.000000000000000000
-      Size.PlatformDefault = False
-      TextSettings.Font.Family = 'Trebuchet MS'
-      TextSettings.Font.Size = 16.000000000000000000
-      TextSettings.FontColor = claForestgreen
-      TextSettings.WordWrap = False
-      Text = 'Author : Abduraimov Mo'#39'minjon'
+      Text = 'Created by : @MuminjonGuru'
     end
     object Label10: TLabel
       AutoSize = True

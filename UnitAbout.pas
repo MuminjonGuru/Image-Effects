@@ -22,7 +22,6 @@ uses
 type
   TFormAbout = class(TForm)
     Panel1: TPanel;
-    Label6: TLabel;
     Layout1: TLayout;
     Ellipse3: TEllipse;
     Ellipse4: TEllipse;
@@ -32,7 +31,6 @@ type
     FloatAnimation2: TFloatAnimation;
     Label7: TLabel;
     Label8: TLabel;
-    Label9: TLabel;
     Label10: TLabel;
     FloatAnimation3: TFloatAnimation;
     ShadowEffect1: TShadowEffect;
@@ -53,7 +51,7 @@ implementation
 
 procedure TFormAbout.Panel1Click(Sender: TObject);
 begin
-  ShellExecute(0, 'OPEN', 'https://delphi.uz', Nil, Nil, SW_SHOWMAXIMIZED);
+  ShellExecute(0, 'OPEN', 'https://muminjon.com', Nil, Nil, SW_SHOWMAXIMIZED);
 end;
 
 end.
