@@ -26,17 +26,18 @@ There are several effects, for example:
     procedure TFormMain.MenuItemSavePictureClick(Sender: TObject);
     var
       B: TBitmap;
+      
     begin
       B := TBitmap.Create;
-      Try
+      try
         if SaveDialog1.Execute then
           B := Image1.MakeScreenshot;
         Image1.Bitmap.Assign(B);
 
         Image1.Bitmap.SaveToFile(SaveDialog1.FileName + '.bmp');
-      Finally
+      finally
         B.Free;
-      End;
+      end;
     end;
 
 Learn more on my website! [Delphi.Uz](https://delphi.uz/2017/01/25/delphi-windows-development/delphi-fmx-image-effects-program-windows-os/)
