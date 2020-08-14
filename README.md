@@ -2,7 +2,7 @@
 
 ## Delphi FMX Image Effects program for Windows OS
 
-This program powered by FireMonkey framework. And uses FMX components.
+This program powered by the FireMonkey framework. And uses FMX components.
 ![enter image description here](https://i0.wp.com/delphi.uz/wp-content/uploads/2017/01/firemonkey-delphi-image-effects-components.jpg?w=323&ssl=1)
 
 Here this is the development screenshot (RAD Studio 10.1 Berlin)
