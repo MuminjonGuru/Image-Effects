@@ -4,6 +4,8 @@
 {                                               }
 {    @MuminjonGuru                              }
 {                  https://delphi.uz            }
+{ Learn MORE HERE: FMX.PhotoEditorDemo Sample   }
+{                                               }
 {***********************************************}
 
 unit UnitMain;
